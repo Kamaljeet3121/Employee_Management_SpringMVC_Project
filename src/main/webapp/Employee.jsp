@@ -8,8 +8,8 @@
 </head>
 <body>
 <h2>Welcome to Employee page</h2>
-<a>Click to Sign-Up</a>
-<br>
-<a>Click to Sign-in</a>
+<button><a href=EmployeeSignUp.jsp>Click to Sign-Up</a></button>
+
+<button><a href=EmployeeSignin.jsp>Click to Sign-in</a></button>
 </body>
 </html>

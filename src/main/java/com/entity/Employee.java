@@ -4,11 +4,16 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 
 @Entity
 public class Employee implements Serializable {
 	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "emp_SEQ")
+	@SequenceGenerator(initialValue = 1,allocationSize = 1,name="emp_SEQ")
 	private int id;
 	private String name;
 	private int age;

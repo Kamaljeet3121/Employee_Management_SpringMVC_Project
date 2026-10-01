@@ -7,7 +7,7 @@
 <title>Employee Sign-in</title>
 </head>
 <body>
-	<form action="EmpLogin" method="get">
+	<form action="Employee/Login" method="get">
 	<label>Email</label>
 	<input type="text">
 	

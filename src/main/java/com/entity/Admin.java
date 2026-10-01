@@ -8,6 +8,7 @@ public class Admin {
 	@Id
 	private String email;
 	private String pwd;
+	
 	public String getEmail() {
 		return email;
 	}
