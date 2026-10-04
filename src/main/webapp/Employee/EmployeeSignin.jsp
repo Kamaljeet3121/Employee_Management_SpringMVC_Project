@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Employee Sign-in</title>
 </head>
 <body>
-<form action="EmpSignUp" method="post">
-	<label>Email</label>
-	<input type="text">
+	<form action="Login" method="get">
+	<label name ="email">Email</label>
+	<input name ="email" type="text">
 	
-	<label>Password</label>
-	<input type="password">
+	<label name="pwd">Password</label>
+	<input name ="pwd" type="password">
 	
 	<button type="submit">Login</button>
 	

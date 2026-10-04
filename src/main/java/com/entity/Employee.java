@@ -3,6 +3,7 @@ package com.entity;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class Employee implements Serializable {
 	private int id;
 	private String name;
 	private int age;
+	@Column(unique = true)
 	private String email;
 	private String pwd;
 	private double sal;

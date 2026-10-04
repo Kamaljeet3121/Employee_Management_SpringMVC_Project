@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false"  %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,5 +11,7 @@
 <button><a href=EmployeeSignUp.jsp>Click to Sign-Up</a></button>
 
 <button><a href=EmployeeSignin.jsp>Click to Sign-in</a></button>
+
+<h3>${status}</h3>
 </body>
 </html>
