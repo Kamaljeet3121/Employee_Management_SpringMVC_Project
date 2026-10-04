@@ -15,7 +15,7 @@ public class Employee implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "emp_SEQ")
 	@SequenceGenerator(initialValue = 1,allocationSize = 1,name="emp_SEQ")
-	private int id;
+	private Integer id;
 	private String name;
 	private int age;
 	@Column(unique = true)
@@ -26,7 +26,7 @@ public class Employee implements Serializable {
 	private LocalDate doj;
 	
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	public void setId(int id) {
